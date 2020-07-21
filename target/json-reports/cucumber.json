@@ -3,10 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-21T18:31:26.671Z",
+        "start_timestamp": "2020-07-21T20:05:03.127Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -15,9 +16,9 @@
           }
         ],
         "line": 3,
-        "name": "As a manager, I search the hotel with unregistered data.",
+        "name": "As a manager, I search the hotel with registered data.",
         "description": "",
-        "id": "hotel-search;as-a-manager--i-search-the-hotel-with-unregistered-data.",
+        "id": "hotel-search;as-a-manager--i-search-the-hotel-with-registered-data.",
         "after": [
           {
             "result": {
@@ -34,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11961000000,
+              "duration": 24037000000,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 989000000,
+              "duration": 891000000,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 145000000,
               "status": "passed"
             },
             "line": 6,
@@ -76,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 69000000,
+              "duration": 149000000,
               "status": "passed"
             },
             "line": 7,
@@ -94,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 61195000000,
+              "duration": 41417000000,
               "status": "passed"
             },
             "line": 8,
@@ -106,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 92000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 9,
@@ -118,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 848000000,
+              "duration": 997000000,
               "status": "passed"
             },
             "line": 10,
@@ -130,15 +131,15 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "Click on Name text box and type hotel name \"Darda\"",
+            "name": "Click on Name text box and type hotel name \"Bugshooter Hotel\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Darda\"",
+                  "val": "\"Bugshooter Hotel\"",
                   "offset": 43
                 }
               ],
@@ -148,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 661000000,
+              "duration": 510000000,
               "status": "passed"
             },
             "line": 12,
@@ -160,26 +161,26 @@
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 3030000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "Verify the hotel the list is empty \"No data available in table\"",
+            "name": "Verify the hotel name is correct \"Bugshooter Hotel\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"No data available in table\"",
-                  "offset": 35
+                  "val": "\"Bugshooter Hotel\"",
+                  "offset": 33
                 }
               ],
-              "location": "stepdefinitions.SearchUnregisteredHotel.verify_the_hotel_the_list_is_empty(java.lang.String)"
+              "location": "stepdefinitions.SearchRegisteredHotel.verify_the_hotel_name_is_correct(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SearchUnregisteredHotel"
+            "name": "@SearchRegisteredHotel"
           }
         ]
       }
@@ -188,10 +189,10 @@
     "description": "",
     "id": "hotel-search",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FhcTrip/SearchUnregisteredHotel.feature",
+    "uri": "file:src/test/resources/features/FhcTrip/SearchRegisteredHotel.feature",
     "tags": [
       {
-        "name": "@SearchUnregisteredHotel",
+        "name": "@SearchRegisteredHotel",
         "type": "Tag",
         "location": {
           "line": 1,

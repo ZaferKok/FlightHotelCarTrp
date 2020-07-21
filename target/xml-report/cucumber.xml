@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="80.56">
-<testcase classname="Hotel Search" name="As a manager, I search the hotel with unregistered data." time="77.232">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.785">
+<testcase classname="Hotel Search" name="As a manager, I search the hotel with registered data." time="72.454">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 And Click on Log in link....................................................passed
 And Click on user name text box and type it "manager2"......................passed
@@ -8,9 +8,9 @@ And Click on password name text box and type it "Man1ager2!"................pass
 And Click login button......................................................passed
 And Click on Hotel Management Management button.............................passed
 And Click on Click on Hotel List button.....................................passed
-And Click on Name text box and type hotel name "Darda"......................passed
+And Click on Name text box and type hotel name "Bugshooter Hotel"...........passed
 And Click on search button..................................................passed
-Then Verify the hotel the list is empty "No data available in table"........passed
+Then Verify the hotel name is correct "Bugshooter Hotel"....................passed
 ]]></system-out>
 </testcase>
 </testsuite>
