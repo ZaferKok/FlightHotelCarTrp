@@ -20,7 +20,8 @@ public class SearchRegisteredHotel {
     }
 
     @Then("Verify the hotel name is correct {string}")
-    public void verify_the_hotel_name_is_correct(String string) {
-        Assert.assertEquals(allPage.listOfHotelsPage().printData(1,3), string);
+    public void verify_the_hotel_name_is_correct(String string) throws InterruptedException {
+        Thread.sleep(3000);
+        Assert.assertEquals(string, allPage.listOfHotelsPage().printData(1,3));
     }
 }

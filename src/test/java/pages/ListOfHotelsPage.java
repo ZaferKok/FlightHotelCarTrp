@@ -26,9 +26,9 @@ public class ListOfHotelsPage {
     public WebElement groupOfHotelDropdown;
     @FindBy (id = "btnSubmit")
     public WebElement saveHotel;
-    @FindBy (id = "//div[@class='bootbox-body']")
+    @FindBy (xpath = "//div[@class='bootbox-body']")
     public WebElement messageHotel;
-    @FindBy (id = "//label[@class='error']")
+    @FindBy (xpath = "//label[@class='error']")
     public WebElement invalidEmailHotel;
     @FindBy (xpath = "//input[@name='Name']")
     public WebElement nameBoxForSearch;

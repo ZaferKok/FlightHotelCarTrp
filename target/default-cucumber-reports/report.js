@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/SearchUnregisteredHotel.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/SearchRegisteredHotel.feature");
 formatter.feature({
   "name": "Hotel Search",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SearchUnregisteredHotel"
+      "name": "@SearchRegisteredHotel"
     }
   ]
 });
 formatter.scenario({
-  "name": "As a manager, I search the hotel with unregistered data.",
+  "name": "As a manager, I search the hotel with registered data.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SearchUnregisteredHotel"
+      "name": "@SearchRegisteredHotel"
     }
   ]
 });
@@ -93,7 +93,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Name text box and type hotel name \"Darda\"",
+  "name": "Click on Name text box and type hotel name \"Bugshooter Hotel\"",
   "keyword": "And "
 });
 formatter.match({
@@ -113,11 +113,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify the hotel the list is empty \"No data available in table\"",
+  "name": "Verify the hotel name is correct \"Bugshooter Hotel\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchUnregisteredHotel.verify_the_hotel_the_list_is_empty(java.lang.String)"
+  "location": "stepdefinitions.SearchRegisteredHotel.verify_the_hotel_name_is_correct(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

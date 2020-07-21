@@ -2,9 +2,17 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import net.bytebuddy.pool.TypePool;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.AllPage;
+import utilities.Driver;
 
 public class HotelCreation {
 
@@ -44,13 +52,11 @@ public class HotelCreation {
     @Given("Click on Email text box and type valid email {string}")
     public void click_on_Email_text_box_and_type_valid_email(String email) {
         allPage.listOfHotelsPage().emailHotel.sendKeys(email);
-    }
 
-    @Given("Click on IDGroup text box and select group Hotel Type1")
-    public void click_on_IDGroup_text_box_and_select_group_Hotel_Type1(String email) throws InterruptedException {
-        Select select = new Select(allPage.listOfHotelsPage().groupOfHotelDropdown);
-        select.selectByVisibleText("Hotel Type1");
-        Thread.sleep(3000);
+    }
+    @Given("Click on IDGroup text box and select group {string}")
+    public void click_on_IDGroup_text_box_and_select_group(String string) {
+        allPage.listOfHotelsPage().groupOfHotelDropdown.sendKeys(string);
     }
 
     @Given("Click on Save button")
@@ -59,7 +65,10 @@ public class HotelCreation {
     }
 
     @Then("Verify the message is correct {string}")
-    public void verify_the_message_is_correct(String message) {
+    public void verify_the_message_is_correct(String message) throws InterruptedException {
+        //Thread.sleep(3000);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(allPage.listOfHotelsPage().messageHotel));
         Assert.assertEquals(allPage.listOfHotelsPage().messageHotel.getText(), message);
     }
 }

@@ -14,6 +14,6 @@ Feature:Hotel Creation
     And Click on Address text box and type valid address "3 Vasileos Georgiou A, Syntagma Square Str, Athina"
     And Click on Phone text box and type valid phone "21 0636 0000"
     And Click on Email text box and type valid email
-    And Click on IDGroup text box and select group Hotel Type1
+    And Click on IDGroup text box and select group "Hotel Type1"
     And Click on Save button
     Then Verify the email error message is correct "Email"
