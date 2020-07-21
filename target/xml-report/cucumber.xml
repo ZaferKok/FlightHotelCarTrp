@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="128.202">
-<testcase classname="" name="As a manager, I should be able to search room with invalid room data." time="124.883">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="80.56">
+<testcase classname="Hotel Search" name="As a manager, I search the hotel with unregistered data." time="77.232">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 And Click on Log in link....................................................passed
 And Click on user name text box and type it "manager2"......................passed
 And Click on password name text box and type it "Man1ager2!"................passed
 And Click login button......................................................passed
-And Click on System Management dropdown button..............................passed
-And Click on the room reservation button....................................passed
-And Click on ContactNameSurname textbox and type valid name	"ELENI ILIAD"...passed
-And Click on ContactPhone textbox and type valid phone number	"(306) 987-712".passed
-And Click on Search button..................................................passed
-Then Verify the message "No data available in table"........................passed
+And Click on Hotel Management Management button.............................passed
+And Click on Click on Hotel List button.....................................passed
+And Click on Name text box and type hotel name "Darda"......................passed
+And Click on search button..................................................passed
+Then Verify the hotel the list is empty "No data available in table"........passed
 ]]></system-out>
 </testcase>
 </testsuite>

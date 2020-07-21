@@ -1,10 +1,7 @@
 package utilities;
 
 
-import pages.HomePage;
-import pages.LoginPage;
-import pages.RoomReservationPage;
-import pages.UserPage;
+import pages.*;
 
 public class AllPage {
 
@@ -12,6 +9,13 @@ public class AllPage {
     protected LoginPage loginPage;
     protected UserPage userPage;
     protected RoomReservationPage roomReservationPage;
+    protected ListOfHotelsPage listOfHotelsPage;
+
+    public ListOfHotelsPage listOfHotelsPage(){
+        if(listOfHotelsPage == null){
+            listOfHotelsPage = new ListOfHotelsPage();
+        }return listOfHotelsPage;
+    }
 
     public RoomReservationPage roomReservationPage(){
         if(roomReservationPage == null){

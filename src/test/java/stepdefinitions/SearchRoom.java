@@ -8,8 +8,8 @@ import utilities.AllPage;
 public class SearchRoom {
     AllPage allPage = new AllPage();
 
-    @Given("Click on System Management dropdown button")
-    public void click_on_System_Management_dropdown_button() {
+    @Given("Click on Hotel Management Management button")
+    public void click_on_Hotel_Management_Management_button() {
     allPage.userPage().hotelManagementButton.click();
 
     }

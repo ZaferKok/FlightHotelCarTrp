@@ -3,11 +3,10 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-16T19:45:08.697Z",
+        "start_timestamp": "2020-07-21T18:31:26.671Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +15,13 @@
           }
         ],
         "line": 3,
-        "name": "As a manager, I should be able to search room with invalid room data.",
+        "name": "As a manager, I search the hotel with unregistered data.",
         "description": "",
-        "id": ";as-a-manager--i-should-be-able-to-search-room-with-invalid-room-data.",
+        "id": "hotel-search;as-a-manager--i-search-the-hotel-with-unregistered-data.",
         "after": [
           {
             "result": {
-              "duration": 971000000,
+              "duration": 944000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31999000000,
+              "duration": 11961000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 742000000,
+              "duration": 989000000,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "line": 6,
@@ -77,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 7,
@@ -95,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 88194000000,
+              "duration": 61195000000,
               "status": "passed"
             },
             "line": 8,
@@ -107,110 +106,92 @@
           },
           {
             "result": {
-              "duration": 118000000,
+              "duration": 92000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "Click on System Management dropdown button",
+            "name": "Click on Hotel Management Management button",
             "match": {
-              "location": "stepdefinitions.SearchRoom.click_on_System_Management_dropdown_button()"
+              "location": "stepdefinitions.SearchRoom.click_on_Hotel_Management_Management_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1247000000,
+              "duration": 848000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on the room reservation button",
+            "name": "Click on Click on Hotel List button",
             "match": {
-              "location": "stepdefinitions.SearchRoom.click_on_the_room_reservation_button()"
+              "location": "stepdefinitions.HotelCreation.click_on_Click_on_Hotel_List_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 193000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "Click on ContactNameSurname textbox and type valid name\t\"ELENI ILIAD\"",
+            "name": "Click on Name text box and type hotel name \"Darda\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ELENI ILIAD\"",
-                  "offset": 56
+                  "val": "\"Darda\"",
+                  "offset": 43
                 }
               ],
-              "location": "stepdefinitions.SearchRoom.click_on_ContactNameSurname_textbox_and_type_valid_name(java.lang.String)"
+              "location": "stepdefinitions.SearchRegisteredHotel.click_on_Name_text_box_and_type_hotel_name(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 283000000,
+              "duration": 661000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "Click on ContactPhone textbox and type valid phone number\t\"(306) 987-712\"",
+            "name": "Click on search button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"(306) 987-712\"",
-                  "offset": 58
-                }
-              ],
-              "location": "stepdefinitions.SearchRoom.click_on_ContactPhone_textbox_and_type_valid_phone_number(java.lang.String)"
+              "location": "stepdefinitions.SearchRegisteredHotel.click_on_search_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 531000000,
+              "duration": 264000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "Click on Search button",
-            "match": {
-              "location": "stepdefinitions.SearchRoom.click_on_Search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 372000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Verify the message \"No data available in table\"",
+            "name": "Verify the hotel the list is empty \"No data available in table\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"No data available in table\"",
-                  "offset": 19
+                  "offset": 35
                 }
               ],
-              "location": "stepdefinitions.SearchRoom.verify_the_message(java.lang.String)"
+              "location": "stepdefinitions.SearchUnregisteredHotel.verify_the_hotel_the_list_is_empty(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SearchRoom"
+            "name": "@SearchUnregisteredHotel"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "Hotel Search",
     "description": "",
-    "id": "",
+    "id": "hotel-search",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FhcTrip/RoomSearch.feature",
+    "uri": "file:src/test/resources/features/FhcTrip/SearchUnregisteredHotel.feature",
     "tags": [
       {
-        "name": "@SearchRoom",
+        "name": "@SearchUnregisteredHotel",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/RoomSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/SearchUnregisteredHotel.feature");
 formatter.feature({
-  "name": "",
+  "name": "Hotel Search",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SearchRoom"
+      "name": "@SearchUnregisteredHotel"
     }
   ]
 });
 formatter.scenario({
-  "name": "As a manager, I should be able to search room with invalid room data.",
+  "name": "As a manager, I search the hotel with unregistered data.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SearchRoom"
+      "name": "@SearchUnregisteredHotel"
     }
   ]
 });
@@ -73,61 +73,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on System Management dropdown button",
+  "name": "Click on Hotel Management Management button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_System_Management_dropdown_button()"
+  "location": "stepdefinitions.SearchRoom.click_on_Hotel_Management_Management_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the room reservation button",
+  "name": "Click on Click on Hotel List button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_the_room_reservation_button()"
+  "location": "stepdefinitions.HotelCreation.click_on_Click_on_Hotel_List_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on ContactNameSurname textbox and type valid name\t\"ELENI ILIAD\"",
+  "name": "Click on Name text box and type hotel name \"Darda\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_ContactNameSurname_textbox_and_type_valid_name(java.lang.String)"
+  "location": "stepdefinitions.SearchRegisteredHotel.click_on_Name_text_box_and_type_hotel_name(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on ContactPhone textbox and type valid phone number\t\"(306) 987-712\"",
+  "name": "Click on search button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_ContactPhone_textbox_and_type_valid_phone_number(java.lang.String)"
+  "location": "stepdefinitions.SearchRegisteredHotel.click_on_search_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Search button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_Search_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Verify the message \"No data available in table\"",
+  "name": "Verify the hotel the list is empty \"No data available in table\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.verify_the_message(java.lang.String)"
+  "location": "stepdefinitions.SearchUnregisteredHotel.verify_the_hotel_the_list_is_empty(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

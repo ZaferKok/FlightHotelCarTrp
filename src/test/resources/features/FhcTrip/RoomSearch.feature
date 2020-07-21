@@ -6,7 +6,7 @@ Feature:
     And Click on user name text box and type it "manager2"
     And Click on password name text box and type it "Man1ager2!"
     And Click login button
-    And Click on System Management dropdown button
+    And Click on Hotel Management Management button
     And Click on the room reservation button
     And Click on ContactNameSurname textbox and type valid name	"ELENI ILIAD"
     And Click on ContactPhone textbox and type valid phone number	"(306) 987-712"

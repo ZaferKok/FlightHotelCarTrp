@@ -14,7 +14,9 @@ public class UserPage {
     public WebElement userListText;
     @FindBy(xpath = "(//span[@class='title'])[3]")
     public WebElement  hotelManagementButton;
-    @FindBy(xpath = "//a[@href='/admin/RoomReservationAdmin']")
+    @FindBy(xpath = "(//span[@class='title'])[3] ']")
     public WebElement roomReservat;
+    @FindBy(xpath = "(//a[@href='/admin/HotelAdmin'])[1]")
+    public WebElement hotelList;
 
 }
