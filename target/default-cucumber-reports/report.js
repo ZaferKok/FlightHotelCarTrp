@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/RoomSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FhcTrip/US241TC001HotelRoomCreation.feature");
 formatter.feature({
   "name": "",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@SearchRoom"
+      "name": "@US241TC001"
     }
   ]
 });
 formatter.scenario({
-  "name": "As a manager, I should be able to search room with invalid room data.",
+  "name": "",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SearchRoom"
+      "name": "@US241TC001"
     }
   ]
 });
@@ -77,57 +77,137 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_System_Management_dropdown_button()"
+  "location": "stepdefinitions.US205TC002SearchRoomInvalidData.click_on_System_Management_dropdown_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the room reservation button",
+  "name": "Click on Hotel Rooms",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_the_room_reservation_button()"
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_Hotel_Rooms()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on ContactNameSurname textbox and type valid name\t\"ELENI ILIAD\"",
+  "name": "Click on Add Hotel Room button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_ContactNameSurname_textbox_and_type_valid_name(java.lang.String)"
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_Add_Hotel_Room_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on ContactPhone textbox and type valid phone number\t\"(306) 987-712\"",
+  "name": "Choose \"HILTON HOTEL\" from IDHotel dropdown menu",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_ContactPhone_textbox_and_type_valid_phone_number(java.lang.String)"
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.choose_from_IDHotel_dropdown_menu(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Search button",
+  "name": "Click on Code checkbox and enter the code number",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.click_on_Search_button()"
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_Code_checkbox_and_enter_the_code_number()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify the message \"No data available in table\"",
-  "keyword": "Then "
+  "name": "Click on the Name checkbox and enter the name",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.SearchRoom.verify_the_message(java.lang.String)"
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_the_Name_checkbox_and_enter_the_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the Location checkbox and enter the location",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_the_Location_checkbox_and_enter_the_location()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Drag and drop to the Price checkbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.drag_and_drop_to_the_Price_checkbox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Choose the room type from Room Type Dropdown Menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.choose_the_room_type_from_Room_Type_Dropdown_Menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the Max Adult Count and enter the number of person",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_the_Max_Adult_Count_and_enter_the_number_of_person()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the Max Children Count and enter the number of person",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_the_Max_Children_Count_and_enter_the_number_of_person()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the checkbox of Approved",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_the_checkbox_of_Approved()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"HotelRoom was inserted successfully\" text is on the display",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.US241TC001HotelRoomCreation.text_is_on_the_display(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

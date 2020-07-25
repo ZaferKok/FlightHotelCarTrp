@@ -18,5 +18,7 @@ public class RoomReservationPage {
     public WebElement searchButton;
     @FindBy (className = "dataTables_empty")
     public WebElement noRecordMessage;
+    @FindBy(xpath = "//div//tbody//tr//td[11]")
+    public WebElement email;
 }
 

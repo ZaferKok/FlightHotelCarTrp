@@ -1,10 +1,7 @@
 package utilities;
 
 
-import pages.HomePage;
-import pages.LoginPage;
-import pages.RoomReservationPage;
-import pages.UserPage;
+import pages.*;
 
 public class AllPage {
 
@@ -12,6 +9,21 @@ public class AllPage {
     protected LoginPage loginPage;
     protected UserPage userPage;
     protected RoomReservationPage roomReservationPage;
+    protected ListOfHotelRoomPage listOfHotelRoomPage;
+    protected CreateHotelRoomPage createHotelRoomPage;
+
+    public CreateHotelRoomPage createHotelRoomPage(){
+        if (createHotelRoomPage==null){
+            createHotelRoomPage=new CreateHotelRoomPage();
+
+        }return createHotelRoomPage;
+    }
+
+    public ListOfHotelRoomPage listOfHotelRoomPage(){
+        if(listOfHotelRoomPage==null){
+            listOfHotelRoomPage=new ListOfHotelRoomPage();
+        }return listOfHotelRoomPage;
+    }
 
     public RoomReservationPage roomReservationPage(){
         if(roomReservationPage == null){

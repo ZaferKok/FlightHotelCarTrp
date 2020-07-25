@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import utilities.AllPage;
 
-public class SearchRoom {
+public class US205TC002SearchRoomInvalidData {
     AllPage allPage = new AllPage();
 
     @Given("Click on System Management dropdown button")
@@ -19,13 +19,13 @@ public class SearchRoom {
     allPage.userPage().roomReservat.click();
     }
 
-    @Given("Click on ContactNameSurname textbox and type valid name	{string}")
-    public void click_on_ContactNameSurname_textbox_and_type_valid_name(String string) {
+    @Given("Click on ContactNameSurname textbox and type invalid name	{string}")
+    public void click_on_ContactNameSurname_textbox_and_type_invalid_name(String string) {
     allPage.roomReservationPage().contactNameSname.sendKeys(string);
     }
 
-    @Given("Click on ContactPhone textbox and type valid phone number	{string}")
-    public void click_on_ContactPhone_textbox_and_type_valid_phone_number(String string) {
+    @Given("Click on ContactPhone textbox and type invalid phone number	{string}")
+    public void click_on_ContactPhone_textbox_and_type_invalid_phone_number(String string) {
     allPage.roomReservationPage().contactPhone.sendKeys(string);
     }
 
