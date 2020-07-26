@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.AllPage;
 import utilities.Driver;
 
-public class HotelCreation {
+public class US221TC001HotelCreation {
 
 
     AllPage allPage = new AllPage();

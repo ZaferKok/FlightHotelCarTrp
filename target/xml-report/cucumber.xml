@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="149.878">
-<testcase classname="Add New User Negative" name="As an user, I should be able to create a new user with entering valid data" time="146.543">
-<system-out><![CDATA[Given User is on Home Page..................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="56.489">
+<testcase classname="" name="As a manager, I should be able to search room with valid room data." time="53.148">
+<failure message="invalid selector: Unable to locate an element with the xpath expression (//span[@class='title'])[3] '] because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//span[@class='title'])[3] ']' is not a valid XPath expression.&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CIMBOM-PC', ip: '192.168.42.14', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\CIMBOM\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fea1be8ea12388df327777d833720e8b&#10;*** Element info: {Using=xpath, value=(//span[@class='title'])[3] ']}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[Given User is on Home Page..................................................passed
 And Click on Log in link....................................................passed
 And Click on user name text box and type it "manager2"......................passed
 And Click on password name text box and type it "Man1ager2!"................passed
 And Click login button......................................................passed
-And click on ADD USER.......................................................passed
-And click on Username area and type invalid Username........................passed
-And click on Password area and type valid Password..........................passed
-And click on Email area and type valid email................................passed
-And click on Full Name area and type valid Full Name........................passed
-And click on Phone No area and type valid Phone No..........................passed
-And click on Social Security Number area and type valid Social Security Number.passed
-And click on Driving License area and type valid Driving License............passed
-And click on Country area and select  valid Country.........................passed
-And click on State area and do not type any information.....................passed
-And click on Address area and type valid Address............................passed
-And click on Date of Birth area and type valid Date of Birth................passed
-And click on WorkingSector area and type valid WorkingSector................passed
-And click on Role area and select valid Role................................passed
-And click on Approved area and select Yes or No button......................passed
-And click save button.......................................................passed
-Then verify the message "You have some form errors. Please check below."....passed
-]]></system-out>
+And Click on System Management dropdown button..............................passed
+And Click on the room reservation button....................................failed
+And Click on ContactNameSurname textbox and type valid name	"ELENI ILIADA"..skipped
+And Click on ContactPhone textbox and type valid phone number	"(306) 987-7121".skipped
+And Click on Search button..................................................skipped
+Then Verify the message of mail  "eleniiliada@gmail.com"....................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//span[@class='title'])[3] '] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//span[@class='title'])[3] ']' is not a valid XPath expression.
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CIMBOM-PC', ip: '192.168.42.14', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\CIMBOM\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fea1be8ea12388df327777d833720e8b
+*** Element info: {Using=xpath, value=(//span[@class='title'])[3] ']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at stepdefinitions.US205TC002SearchRoomInvalidData.click_on_the_room_reservation_button(US205TC002SearchRoomInvalidData.java:19)
+	at ✽.Click on the room reservation button(file:///C:/Users/CIMBOM/IdeaProjects/FHCTRP/src/test/resources/features/FhcTrip/US205TC001SearchRoomValidData.feature:10)
+]]></failure>
 </testcase>
 </testsuite>

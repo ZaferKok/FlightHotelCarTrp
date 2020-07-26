@@ -18,5 +18,7 @@ public class UserPage {
     public WebElement roomReservat;
     @FindBy(xpath = "(//a[@href='/admin/HotelAdmin'])[1]")
     public WebElement hotelList;
+    @FindBy(xpath = "//a[@href='/admin/HotelRoomAdmin']")
+    public WebElement hotelRoom;
 
 }

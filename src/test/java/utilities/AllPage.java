@@ -13,6 +13,21 @@ public class AllPage {
     protected CreateUserPage createUserPage;
     protected ReservationPage reservationPage;
 
+    protected ListOfHotelRoomPage listOfHotelRoomPage;
+    protected CreateHotelRoomPage createHotelRoomPage;
+
+    public CreateHotelRoomPage createHotelRoomPage(){
+        if (createHotelRoomPage==null){
+            createHotelRoomPage=new CreateHotelRoomPage();
+        }return createHotelRoomPage;
+    }
+
+    public ListOfHotelRoomPage listOfHotelRoomPage(){
+        if(listOfHotelRoomPage==null){
+            listOfHotelRoomPage=new ListOfHotelRoomPage();
+        }return listOfHotelRoomPage;
+    }
+
     public CreateUserPage createUserPage(){
         if(createUserPage == null){
             createUserPage = new CreateUserPage();
