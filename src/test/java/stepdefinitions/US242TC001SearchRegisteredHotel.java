@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import utilities.AllPage;
 
-public class SearchRegisteredHotel {
+public class US242TC001SearchRegisteredHotel {
 
     AllPage allPage = new AllPage();
 
