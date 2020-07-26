@@ -11,5 +11,11 @@ public class ListOfHotelRoomPage {
     }
     @FindBy (xpath = "//span[@class='hidden-480']")
     public WebElement addHotelRoom;
+    @FindBy (name = "Name")
+    public WebElement nameTextbox;
+    @FindBy(xpath = "//tbody//tr[1]//td[4]")
+    public WebElement nameVerification;
+    @FindBy(className = "dataTables_empty")
+    public WebElement errorMessage;
 
 }
