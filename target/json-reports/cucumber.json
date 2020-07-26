@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-07-21T20:05:03.127Z",
+        "start_timestamp": "2020-07-26T08:37:56.501Z",
         "before": [
           {
             "result": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "As a manager, I search the hotel with registered data.",
+        "line": 5,
+        "name": "As an user, I should be able to create a new user with entering valid data",
         "description": "",
-        "id": "hotel-search;as-a-manager--i-search-the-hotel-with-registered-data.",
+        "id": "add-new-user-negative;as-an-user--i-should-be-able-to-create-a-new-user-with-entering-valid-data",
         "after": [
           {
             "result": {
-              "duration": 944000000,
+              "duration": 933000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 24037000000,
+              "duration": 81043000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "User is on Home Page",
             "match": {
               "location": "stepdefinitions.Login.user_is_on_Home_Page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 891000000,
+              "duration": 754000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "Click on Log in link",
             "match": {
               "location": "stepdefinitions.Login.click_on_Log_in_link()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 145000000,
+              "duration": 85000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "Click on user name text box and type it \"manager2\"",
             "match": {
               "arguments": [
@@ -77,10 +77,10 @@
           },
           {
             "result": {
-              "duration": 149000000,
+              "duration": 88000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "Click on password name text box and type it \"Man1ager2!\"",
             "match": {
               "arguments": [
@@ -95,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 41417000000,
+              "duration": 56725000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "Click login button",
             "match": {
               "location": "stepdefinitions.Login.click_login_button()"
@@ -107,92 +107,230 @@
           },
           {
             "result": {
-              "duration": 122000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Click on Hotel Management Management button",
-            "match": {
-              "location": "stepdefinitions.SearchRoom.click_on_Hotel_Management_Management_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 997000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Click on Click on Hotel List button",
-            "match": {
-              "location": "stepdefinitions.HotelCreation.click_on_Click_on_Hotel_List_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 153000000,
+              "duration": 2645000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "Click on Name text box and type hotel name \"Bugshooter Hotel\"",
+            "name": "click on ADD USER",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Bugshooter Hotel\"",
-                  "offset": 43
-                }
-              ],
-              "location": "stepdefinitions.SearchRegisteredHotel.click_on_Name_text_box_and_type_hotel_name(java.lang.String)"
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_ADD_USER()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 510000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "Click on search button",
+            "name": "click on Username area and type invalid Username",
             "match": {
-              "location": "stepdefinitions.SearchRegisteredHotel.click_on_search_button()"
+              "location": "stepdefinitions.US206TC002CreateUserNegative.click_on_Username_area_and_type_invalid_Username()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3030000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "Verify the hotel name is correct \"Bugshooter Hotel\"",
+            "name": "click on Password area and type valid Password",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Password_area_and_type_valid_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on Email area and type valid email",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Email_area_and_type_valid_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Full Name area and type valid Full Name",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Full_Name_area_and_type_valid_Full_Name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on Phone No area and type valid Phone No",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Phone_No_area_and_type_valid_Phone_No()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Social Security Number area and type valid Social Security Number",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Social_Security_Number_area_and_type_valid_Social_Security_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on Driving License area and type valid Driving License",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Driving_License_area_and_type_valid_Driving_License()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click on Country area and select  valid Country",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Country_area_and_select_valid_Country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on State area and do not type any information",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_State_area_and_do_not_type_any_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on Address area and type valid Address",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Address_area_and_type_valid_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on Date of Birth area and type valid Date of Birth",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Date_of_Birth_area_and_type_valid_Date_of_Birth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click on WorkingSector area and type valid WorkingSector",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_WorkingSector_area_and_type_valid_WorkingSector()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on Role area and select valid Role",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Role_area_and_select_valid_Role()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on Approved area and select Yes or No button",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_on_Approved_area_and_select_Yes_or_No_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click save button",
+            "match": {
+              "location": "stepdefinitions.US206TC001CreateUser.click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3055000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "verify the message \"You have some form errors. Please check below.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Bugshooter Hotel\"",
-                  "offset": 33
+                  "val": "\"You have some form errors. Please check below.\"",
+                  "offset": 19
                 }
               ],
-              "location": "stepdefinitions.SearchRegisteredHotel.verify_the_hotel_name_is_correct(java.lang.String)"
+              "location": "stepdefinitions.US206TC002CreateUserNegative.verify_the_message(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SearchRegisteredHotel"
+            "name": "@CreateUserNegative"
           }
         ]
       }
     ],
-    "name": "Hotel Search",
+    "name": "Add New User Negative",
     "description": "",
-    "id": "hotel-search",
+    "id": "add-new-user-negative",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FhcTrip/SearchRegisteredHotel.feature",
+    "uri": "file:src/test/resources/features/FhcTrip/US206TC002CreateUserNegative.feature",
     "tags": [
       {
-        "name": "@SearchRegisteredHotel",
+        "name": "@CreateUserNegative",
         "type": "Tag",
         "location": {
           "line": 1,

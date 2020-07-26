@@ -10,6 +10,22 @@ public class AllPage {
     protected UserPage userPage;
     protected RoomReservationPage roomReservationPage;
     protected ListOfHotelsPage listOfHotelsPage;
+    protected CreateUserPage createUserPage;
+    protected ReservationPage reservationPage;
+
+    public CreateUserPage createUserPage(){
+        if(createUserPage == null){
+            createUserPage = new CreateUserPage();
+        }
+        return createUserPage;
+    }
+
+    public ReservationPage reservationPage(){
+        if(reservationPage == null){
+            reservationPage = new ReservationPage();
+        }
+        return reservationPage;
+    }
 
     public ListOfHotelsPage listOfHotelsPage(){
         if(listOfHotelsPage == null){

@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@SearchRegisteredHotel",
+        tags = "@CreateUserNegative",
         dryRun = false
 )
 public class Runner {
