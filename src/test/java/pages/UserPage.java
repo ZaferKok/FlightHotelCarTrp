@@ -20,5 +20,11 @@ public class UserPage {
     public WebElement hotelList;
     @FindBy(xpath = "//a[@href='/admin/HotelRoomAdmin']")
     public WebElement hotelRoom;
+    @FindBy(name = "NameSurname")
+    public WebElement nameSurnameTextBox;
+    @FindBy(xpath = "//tbody//tr[1]//td[4]")
+    public WebElement nameVerification;
+    @FindBy(className = "dataTables_empty")
+    public WebElement errorMessage;
 
 }
