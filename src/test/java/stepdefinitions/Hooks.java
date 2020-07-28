@@ -15,9 +15,7 @@ public class Hooks {
     @Before(order = 1)
     public void setUp(){
 
-
     }
-
     //Tagged Hooks Annotation
     //This will run before any SPECIFIC SCENARIO
     @Before(value = "@iphone",order = 2)
@@ -37,7 +35,6 @@ public class Hooks {
         if (scenario.isFailed()) {
             scenario.embed(screenshot, "image/png");
         }
-            //Driver.closeDriver();
+            Driver.closeDriver();
     }
-
 }
