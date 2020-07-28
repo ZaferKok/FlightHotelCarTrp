@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.483">
-<testcase classname="Add New User" name="As an user, I should be able to create a new user with entering valid data" time="0.152">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Home Page..................................................skipped
-And Click on Log in link....................................................skipped
-And Click on user name text box and type it "manager2"......................skipped
-And Click on password name text box and type it "Man1ager2!"................skipped
-And Click login button......................................................skipped
-And Click on NameSurname checkbox and type "cihannuma"......................undefined
-And Click on Search button..................................................skipped
-Then Verify that "cihannuma" user is displayed on the page..................undefined
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.344">
+<testcase classname="ApiCheck" name="Positive" time="0.057">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is on Api uri....................................................undefined
+And Accept type is "application/JSON".......................................undefined
+Then HTTP Status Code should be 200.........................................undefined
+And Response format should be "application/JSON"............................undefined
 ]]></failure>
 </testcase>
 </testsuite>

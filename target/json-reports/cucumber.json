@@ -1,154 +1,68 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-26T14:46:16.678Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "As an user, I should be able to create a new user with entering valid data",
+        "start_timestamp": "2020-07-28T20:11:45.843Z",
+        "line": 3,
+        "name": "Positive",
         "description": "",
-        "id": "add-new-user;as-an-user--i-should-be-able-to-create-a-new-user-with-entering-valid-data",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "apicheck;positive",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 6,
-            "name": "User is on Home Page",
-            "match": {
-              "location": "stepdefinitions.Login.user_is_on_Home_Page()"
-            },
+            "line": 4,
+            "name": "User is on Api uri",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "Click on Log in link",
-            "match": {
-              "location": "stepdefinitions.Login.click_on_Log_in_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Click on user name text box and type it \"manager2\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manager2\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Login.click_on_user_name_text_box_and_type_it(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Click on password name text box and type it \"Man1ager2!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Man1ager2!\"",
-                  "offset": 44
-                }
-              ],
-              "location": "stepdefinitions.Login.click_on_password_name_text_box_and_type_it(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "Click login button",
-            "match": {
-              "location": "stepdefinitions.Login.click_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
               "status": "undefined"
             },
-            "line": 11,
-            "name": "Click on NameSurname checkbox and type \"cihannuma\"",
+            "line": 5,
+            "name": "Accept type is \"application/JSON\"",
             "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "Click on Search button",
-            "match": {
-              "location": "stepdefinitions.US205TC002SearchRoomInvalidData.click_on_Search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
               "status": "undefined"
             },
-            "line": 13,
-            "name": "Verify that \"cihannuma\" user is displayed on the page",
+            "line": 6,
+            "name": "HTTP Status Code should be 200",
             "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Response format should be \"application/JSON\"",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@SearchUser"
+            "name": "@get01"
           }
         ]
       }
     ],
-    "name": "Add New User",
+    "name": "ApiCheck",
     "description": "",
-    "id": "add-new-user",
+    "id": "apicheck",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FhcTrip/US202TC001SearchUser.feature",
+    "uri": "file:src/test/resources/features.Api/Get01.feature",
     "tags": [
       {
-        "name": "@SearchUser",
+        "name": "@get01",
         "type": "Tag",
         "location": {
           "line": 1,

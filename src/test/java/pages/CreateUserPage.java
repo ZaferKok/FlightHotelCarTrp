@@ -10,7 +10,6 @@ public class CreateUserPage {
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//span[@class='hidden-480']")
     public WebElement addUser;
     @FindBy(id = "UserName")
