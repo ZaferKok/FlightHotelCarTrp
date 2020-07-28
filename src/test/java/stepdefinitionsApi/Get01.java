@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 public class Get01 {
     @Given("User is on Api uri")
     public void user_is_on_Api_uri() {
-
+        System.out.println("222");
     }
 
     @Given("Accept type is {string}")
